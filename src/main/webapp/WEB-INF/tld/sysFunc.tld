@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+
+	<description>system functions</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>sysfun</short-name>
+	<uri>/systemFunctions</uri>
+
+	<function>
+		<name>checkUserModule</name>
+		<function-class>com.lambda.shiro.UserContext</function-class>
+		<function-signature>java.lang.Boolean checkUserModule(java.lang.String)</function-signature>
+		<example>${sysfun:checkUserModule(1)}</example>
+	</function>
+	
+	<function>
+		<name>getUserRoles</name>
+		<function-class>com.lambda.shiro.UserContext</function-class>
+		<function-signature>java.lang.String getUserRoles()</function-signature>
+		<example>${sysfun:getUserRoles()}</example>
+	</function>
+</taglib> 
